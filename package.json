@@ -1,0 +1,20 @@
+{
+  "name": "101153456_assignment1",
+  "version": "1.0.0",
+  "description": "Full Stack Assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node App.js"
+    
+  },
+  "author": "Milan Patel -101153456",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "mongoose": "^5.11.17"
+  }
+}
