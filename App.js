@@ -14,14 +14,9 @@ app.use(bodyParser.json());
 app.use("*", cors());
 let portA = process.env.PORT != undefined ? process.env.PORT : 7000;
 
-console.log(portA);
-app.listen(
-  (portA,
-  () =>
-    console.log(
-      `🚀 Server ready at http://localhost:${portA}${server.graphqlPath}`
-    ))
-);
+app.listen(portA)
+  ? console.log("Connection Successfull")
+  : console.log("Connection Error");
 
 const server = new ApolloServer({
   typeDefs: TypeDefs.typeDefs,
